@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Test</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .content {
+                height: 1000px; /* just to force showing scroll */
+            }
+
+            .popup-shadow {
+                background-color: black;
+                opacity: 0.5;
+                filter: alpha(opacity=50); /* Support for IE <= 8 */
+            }
+
+            .popup-wrapper {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+
+            }
+
+            .popup-outer-wrapper {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            .popup-inner-wrapper {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                background: transparent;
+            }
+
+            .popup-content {
+                background-color: white;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            .popup-header {
+                border-bottom: 2px dotted blue;
+                font-weight: bold;
+            }
+        </style>
+
+        <script src="../jquery-1.9.1.js"></script>
+        <script></script>
+    </head>
+
+    <body>
+        <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="popup">
+            <div class="popup-wrapper popup-shadow"></div>
+            <div class="popup-wrapper">
+                <div class="popup-outer-wrapper">
+                    <div class="popup-inner-wrapper">
+                        <div class="popup-content">
+                            <div class="popup-header">Header</div>
+                            <div class="popup-text">
+                                Lorem ipsum dolor sit amet,<br />
+                                consectetur adipisicing elit,<br />
+                                sed do eiusmod tempor incididunt<br />
+                                ut labore et dolore magna aliqua.</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
